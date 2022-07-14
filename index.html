@@ -26,24 +26,29 @@
                         <label for="dcnumber" class="form-label">
                             <strong>Enter Decimal Number</strong>
                         </label>
-                        <!-- <input type="number" class="form-control" id="dcPlace" placeholder="Enter Round-Off Place"
-                            value="2" min="0" onkeyup="onDPSubmit()"> -->
-                        <input type="text" class="form-control" id="dcnumber" placeholder="Enter Decimal Number"
-                            value="0" onkeyup="onSubmit()">
-                        <output type="text" class="form-control" id="dcnumber_data" value=""></output>
+                        <!-- <input type="number" class="form-control" id="dcPlace" value="2" min="0" onkeyup="onDPSubmit()"
+                            placeholder="Enter Round-Off Place"> -->
+                        <input type="text" class="form-control" id="dcnumber" value="0" onkeyup="onSubmit()"
+                            placeholder="Enter Decimal Number">
+                        <output type="text" class="form-control" id="rfnumber" value=""></output>
                     </div>
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <div class="btn-group float-end" role="group" style="display: flow-root !important;">
                             <button type="button" value="submit" id="submit" class="btn btn-success">
                                 <strong>Round Off</strong>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
-                <output id="show_sample_data"></output>
+                <hr />
+                <h3>Example (2 Decimal Places)</h3>
+                <hr />
+                <output id="sample_data"></output>
+                <hr />
             </div>
         </div>
     </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
