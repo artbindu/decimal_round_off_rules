@@ -1,7 +1,7 @@
 function createRegex(digit) {
     digit = Number(digit);
     return {
-        roundOffPlace: digit,
+        roundOffPlace: digit ? digit : 2, // default round-off value 2
         beforeRounOffDigit_regx: new RegExp(`[\\+\\-\\d]*\.[\\d]{${digit - 1}}`, 'g'),
         roundOffDigit_regx: new RegExp(`(?<=[\\d]*\\.[\\d]{${digit - 1}})[\\d]`, 'g'),
         firstDiscardDigit_regx: new RegExp(`(?<=[\\d]*\\.[\\d]{${digit}})[\\d]`, 'g'),
@@ -102,6 +102,8 @@ function onDPSubmit() {
         regexInfo = createRegex(Number(n2));
         document.getElementById('sample_data').innerHTML = getData(arrList);
         onSubmit();
+    } else {
+        alert("Enter Round-Off Place between 1-10")
     }
 }
 
