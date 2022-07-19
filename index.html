@@ -24,10 +24,13 @@
                 <form class="row g-3" id="form">
                     <div class="col-12">
                         <label for="dcnumber" class="form-label">
-                            <strong>Enter Decimal Number</strong>
+                            <strong>Enter Round Off Place (1-10)</strong>
                         </label>
                         <input type="number" class="form-control" id="dcPlace" value="2" min="0" max="9" onkeyup="onDPSubmit()"
                             placeholder="Enter Round-Off Place (1-10)">
+                        <label for="dcnumber" class="form-label">
+                            <strong>Enter Decimal Number</strong>
+                        </label>
                         <input type="text" class="form-control" id="dcnumber" value="0" onkeyup="onSubmit()"
                             placeholder="Enter Decimal Number">
                         <output type="text" class="form-control" id="rfnumber" value=""></output>
